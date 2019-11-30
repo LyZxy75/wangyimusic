@@ -1,0 +1,18 @@
+/* components/cation/cation.wxss */
+
+.details {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.image {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  margin: 30rpx;
+}
+.name{
+  margin-left: 20rpx;
+}

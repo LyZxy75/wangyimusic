@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-tabs": "../../../lib/vant/tabs",
+    "van-tab": "../../../lib/vant/tab",
+    "van-button":"../../../lib/vant/button",
+    "van-cell-group": "../../../lib/vant/cell-group",    
+    "van-field": "../../../lib/vant/field"
+  },
+  "navigationBarTitleText": "登录"
+}

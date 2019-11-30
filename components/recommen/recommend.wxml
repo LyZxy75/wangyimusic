@@ -1,0 +1,15 @@
+<!--components/recommend/recommend.wxml-->
+<!-- 推荐歌单 -->
+<view class="recommend">
+  <view class="recommend_songs">
+    <view class="songs">推荐歌单</view>
+    <view class="square" bindtap="Square">歌单广场</view>
+  </view>
+  <!-- 图片、标题名 -->
+  <view class="recommendation">
+    <view class="list" wx:for='{{result}}' wx:key='{{index}}' bindtap='song_sheet' data-item='{{item}}'>
+      <view class="mv"><image src="{{item.picUrl}}" class='recommend_bg'></image></view>
+      <view class="name">{{item.name}}</view>
+    </view>
+  </view>
+</view>

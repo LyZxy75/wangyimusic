@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-field": "../../../lib/vant/field",
+    "van-button": "../../../lib/vant/button",
+    "van-cell-group": "../../../lib/vant/cell-group"
+    
+  },
+  "navigationBarTitleText": "注册"
+}

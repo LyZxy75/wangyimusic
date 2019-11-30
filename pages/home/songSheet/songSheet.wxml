@@ -1,0 +1,30 @@
+<!--pages/home/songSheet/songSheet.wxml-->
+<!-- 歌单 -->
+<view class="song_sheet">
+  <view class="header">
+    <view class="top_bg">
+      <image src="{{songsheet.coverImgUrl}}" class="songSheet_bg"></image>
+    </view>
+    <view class="songSheet_name">{{songsheet.name}}</view>
+    <view class="logos">
+      <image class="wangyi" src="../../../images/wangyi.png"></image>
+    </view>
+  </view>
+  <view class="whole">
+    <view class="Play_all">
+      <view class="all" bindtap="play_all">
+        <image class="plays" src="../../../images/bo.png"></image>
+      </view>
+      <view class="alls">播放全部(共{{songsheet.tracks.length}}首)</view>
+    </view>
+    <view class="Collection" bindtap="collection">+ 收藏({{songsheet.subscribedCount}})</view>
+  </view>
+  <view class="music_list" wx:for='{{songsheet.tracks}}' wx:key='{{index}}'>
+    <view class="number">{{index +1}}</view>
+    <view class="music_name">
+      <view class="song_name">{{item.name}}</view>
+      <view class="author">{{item.ar[0].name}}</view>
+    </view>
+    <image class="play" src="../../../images/bo.png" data-index='{{index}}' bindtap="music"></image>
+  </view>
+</view>

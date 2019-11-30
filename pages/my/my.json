@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-icon":"../../lib/vant/icon",
+    "van-button": "../../lib/vant/button"
+  },
+  "navigationBarTitleText": "我的"
+}

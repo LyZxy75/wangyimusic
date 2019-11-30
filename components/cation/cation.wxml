@@ -1,0 +1,10 @@
+<!--components/cation/cation.wxml-->
+<!-- singer歌手分类子组件 -->
+<view>
+  <view wx:for="{{song}}" wx:key="{{index}}" class="details" data-item="{{item}}" bindtap="singer">
+  <!-- 歌手头像 -->
+    <image src="{{item.img1v1Url}}" class="image"></image>
+    <!-- 歌手名 -->
+    <view class="name">{{item.name}}</view>
+  </view>
+</view>

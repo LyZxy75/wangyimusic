@@ -1,0 +1,140 @@
+/* pages/home/songSheet/songSheet.wxss */
+
+.song_sheet {
+}
+
+.header {
+  width: 100%;
+  height: 540rpx;
+  background: #fe7264;
+  position: relative;
+}
+
+.top_bg {
+  width: 75%;
+  height: 75%;
+  opacity: 0.5;
+  position: absolute;
+  top: 12.5%;
+  left: 12.5%;
+}
+
+.songSheet_bg {
+  width: 100%;
+  height: 100%;
+}
+
+.songSheet_name {
+  width: 80%;
+  color: #fff;
+  position: absolute;
+  top: 25%;
+  left: 12%;
+  right: 18%;
+  font-size: 38rpx;
+}
+
+.wangyi {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+.logos {
+  width: 100rpx;
+  height: 80rpx;
+  border-radius: 0 0 100% 0;
+  background: #fe4e3f;
+}
+
+.whole {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  font-size: 28rpx;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.Play_all {
+  width: 60%;
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+  align-items: center;
+}
+
+.all {
+  margin-left: 5%;
+  position: relative;
+}
+
+.plays {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -30rpx;
+}
+
+.alls {
+  margin-left: 20%;
+}
+
+.Collection {
+  width: 40%;
+  background: #c10d0d;
+  text-align: center;
+  color: #fff;
+}
+
+.music_list {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-top: 10rpx;
+}
+
+.number {
+  width: 60rpx;
+  color: #ccccd5;
+  margin-left: 3%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+
+.music_name {
+  margin-left: 3%;
+  margin-top: 10rpx;
+  width: 80%;
+}
+
+.song_name {
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 26rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.author {
+  color: #ccccd5;
+  font-size: 24rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  margin-top: 5rpx;
+}
+
+.play {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  margin-top: -30rpx;
+}

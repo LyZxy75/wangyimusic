@@ -1,0 +1,40 @@
+<!--pages/my/my.wxml-->
+<view>
+  <view class="Sign_in" wx:if='{{uid === "" }}'>
+    <view class="sign">您还没有登录喔</view>
+    <view class="login" bindtap="login">立即登录</view>
+  </view>
+  <view class="user" wx:else>
+    <view class="top">
+      <view class="Head">
+        <image class="head" src="{{profile.avatarUrl}}"></image>
+      </view>
+      <view class="name">
+        <view class="user_name">{{profile.nickname}}</view>
+        <view class="grade">lv:{{level}}</view>
+      </view>
+      <view class="sin">签到</view>
+    </view>
+    <view class="nav">
+      <view class="nav_bar">
+        <view class="num">{{profile.eventCount}}</view>
+        <view class="txt">动态</view>
+      </view>
+      <view class="nav_bar">
+        <view class="num">{{profile.follows}}</view>
+        <view class="txt">关注</view>
+      </view>
+      <view class="nav_bar">
+        <view class="num">{{profile.followeds}}</view>
+        <view class="txt">粉丝</view>
+      </view>
+      <view class="nav_bar" bindtap="editing">
+        <view class="num"><van-icon name="edit" /></view>
+        <view class="txt">编辑资料</view>
+      </view>
+    </view>
+    <view class="sign_out">
+    <van-button type="warning" custom-style="width:180rpx;background:#ff976a;" bindtap="sing_out">退出登录</van-button>
+    </view>
+  </view>
+</view>

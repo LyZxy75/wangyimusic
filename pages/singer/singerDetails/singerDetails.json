@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-icon":"../../../lib/vant/icon"
+  },
+  "navigationBarTitleText": "歌手详情"
+}

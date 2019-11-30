@@ -1,0 +1,15 @@
+/* pages/my/login/login.wxss */
+.call{
+  margin-top: 40rpx;
+}
+.Button{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 120rpx;
+}
+.van-button{
+  width: 150rpx
+}
+.sdasd{
+  border-bottom: 1px solid #f7f7f7;
+}

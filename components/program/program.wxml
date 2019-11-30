@@ -1,0 +1,16 @@
+<!--components/program/program.wxml-->
+<!-- 推荐节目 -->
+<view class="recommended_program">
+  <view class="recommend_songs">
+    <view class="songs">推荐节目</view>
+    <view class="square" bindtap="program">更多节目</view>
+  </view>
+  <!-- 图片、标题名 -->
+  <view class="recommendation">
+    <view class="list" wx:for='{{com_program}}' wx:key='{{index}}'>
+      <view class="mv"><image src="{{item.blurCoverUrl}}" class='recommend_bg'></image></view>
+      <view class="name">{{item.name}}</view>
+    </view>
+  </view>
+</view>
+

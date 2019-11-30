@@ -1,0 +1,15 @@
+<!--components/station/station.wxml-->
+<!-- 推荐电台 -->
+<view class="radio_station">
+  <view class="recommend_songs">
+    <view class="songs">推荐电台</view>
+    <view class="square" bindtap="radio">电台广场</view>
+  </view>
+  <!-- 图片、标题名 -->
+  <view class="recommendation">
+    <view class="list" wx:for='{{radio_station}}' wx:key='{{index}}'>
+      <view class="mv"><image src="{{item.picUrl}}" class='recommend_bg'></image></view>
+      <view class="name">{{item.name}}</view>
+    </view>
+  </view>
+</view>

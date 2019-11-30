@@ -1,0 +1,54 @@
+<!--pages/home/home.wxml-->
+<!-- 首页 -->
+<view class="warp">
+  <!-- 头部搜索框 -->
+  <view class="top">
+    <view class="hall">音乐馆</view>
+    <view class="search">
+      <van-search value="{{ value }}" placeholder="请输入搜索关键词" use-action-slot show-action='true' shape='round' bind:search="onSearch">
+        <view slot="action" bind:tap="onSearch" class="sear">搜索</view>
+      </van-search>
+    </view>
+    <image src="../../images/sousuo.png" class="music"></image>
+  </view>
+  <!-- 首页banners轮播图 -->
+  <view class="banners">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
+      <swiper-item wx:for="{{banners}}" wx:key="index">
+        <image src="{{item.imageUrl}}" lazy-load="true" class="ban_img"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="nav">
+    <view class="nav_bar">
+      <view class="txt">每日推荐</view>
+      <view class="imgs"><image src="../../images/tuijian.png" class="img"></image></view>
+    </view>
+    <view class="nav_bar">
+      <view class="txt">歌单</view>
+      <view class="imgs"><image src="../../images/gedan.png" class="img"></image></view>
+    </view>
+    <view class="nav_bar ">
+      <view class="txt">排行榜</view>
+      <view class="imgs"><image src="../../images/paihang.png" class="img"></image></view>
+    </view>
+    <view class="nav_bar">
+      <view class="txt">电台</view>
+      <view class="imgs"><image src="../../images/diantai.png" class="img"></image></view>
+    </view>
+    <view class="nav_bar">
+      <view class="txt">直播</view>
+      <view class="imgs"><image src="../../images/zhibo.png" class="img"></image></view>
+    </view>
+  </view>
+  <!-- 推荐歌单、子组件引用 -->
+  <view class="recom"><recommend></recommend> </view>
+  <!-- 新碟、子组件引用 -->
+  <view class="newDish"><newDish></newDish></view>
+  <!-- 音乐新势力、子组件引用 -->
+  <view><Influence></Influence></view>
+  <!-- 推荐电台、子组件引用 -->
+  <view><stations></stations></view>
+  <!-- 推荐节目 、子组件引用-->
+  <view><Program></Program></view>
+</view>

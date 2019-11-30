@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-search": "../../lib/vant/search/index",
+    "recommend":"../../components/recommen/recommend",
+    "newDish":"../../components/newDish/newDish",
+    "Influence":"../../components/influence/influence",
+    "stations":"../../components/station/station",
+    "Program":"../../components/program/program"
+  }
+}

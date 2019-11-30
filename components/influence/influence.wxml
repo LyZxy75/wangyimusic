@@ -1,0 +1,24 @@
+<!--components/influence/influence.wxml-->
+<!-- 音乐新势力 -->
+<view class="influence">
+  <view class="recommend_songs">
+    <!-- 新碟、新歌切换 -->
+    <view class="songs">
+      <text>音乐新势力</text>
+    </view>
+    <!-- 跳转更多 -->
+    <view class="stillMore" bindtap="stillMore">新音乐</view>
+  </view>
+  <!-- 图片、标题名 -->
+  <view class="recommendation">
+    <view class="list" wx:for='{{new_Music}}' wx:key='{{index}}'>
+      <view class="mv">
+        <image src="{{item.song.album.blurPicUrl}}" class='recommend_bg'>
+          <image src="../../images/bofang.png" class="play"></image>
+        </image>
+      </view>
+      <view class="name">{{item.name}} </view>
+      <view class="names">{{item.song.artists[0].name}}</view>
+    </view>
+  </view>
+</view>

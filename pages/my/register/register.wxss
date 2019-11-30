@@ -1,0 +1,10 @@
+/* pages/my/register/register.wxss */
+.sdasd{
+  border-bottom: 1px solid #f7f7f7;
+}
+.Button{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 120rpx;
+}
+

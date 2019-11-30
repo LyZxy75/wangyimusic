@@ -1,0 +1,21 @@
+/* pages/singer/singer.wxss */
+
+.letter {
+  display: flex;
+  justify-content: space-around;
+  width: 820rpx;
+  margin-left: 30rpx;
+}
+
+.one {
+  width: 40rpx;
+  height: 50rpx;
+  color: white;
+  line-height: 50rpx;
+  text-align: center;
+  background-color: #c10d0d;
+}
+.word{
+  height: 50rpx;
+  line-height: 50rpx;
+}

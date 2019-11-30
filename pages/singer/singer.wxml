@@ -1,0 +1,25 @@
+<!--pages/singer/singer.wxml-->
+<!-- 歌手 -->
+<view>
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <!--                第一层循环，循环歌手分类-->
+    <view wx:for="{{Singer}}" wx:key="{{index}}">
+      <van-tab title="{{item}}">
+      <!-- scroll-view横向滚动 -->
+      <scroll-view scroll-x="true" enable-flex='true' style="width: 100%" scroll-into-view="{{toView}}" scroll-left="{{scrollTop}}">
+        <view wx:if="{{index !== 0}}" class="letter">          
+            <!--                第二层循环，循环字母-->
+            <view  wx:for="{{Letter}}" wx:for-index="ind" wx:for-item="items" wx:key="{{ind}}" class="word {{ind === letter_index ? 'one':''}}" data-index="{{ind}}" data-item="{{items}}" bindtap="branch">
+              {{items}}
+            </view>            
+        </view>
+        </scroll-view>
+        <!-- 歌手类型对应的歌手列表、子组件引用 -->
+        <Cation wx:if="{{active === index && letters === '热'}}" index="{{index}}" letters="{{letters}}"></Cation>
+    
+        <Cation wx:elif="{{active === index && letters !== '热'}}" index="{{index}}" letters="{{letters}}"></Cation>
+
+      </van-tab>
+    </view>
+  </van-tabs>
+</view>

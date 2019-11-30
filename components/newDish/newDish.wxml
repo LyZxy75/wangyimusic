@@ -1,0 +1,37 @@
+<!--components/newDish/newDish.wxml-->
+<!-- 云音乐首页新碟上架 -->
+<view class="recommend">
+  <view class="recommend_songs">
+    <!-- 新碟、新歌切换 -->
+    <view class="songs">
+      <text class="dish {{flag === 1 ? 'select' : ''}}" bindtap="newd">新碟</text>
+      <text class="dish {{flag === 2 ? 'select' : ''}}" bindtap="songs">新歌</text>
+    </view>
+    <!-- 跳转更多 -->
+    <view class="stillMore" bindtap="stillMore">更多新碟</view>
+  </view>
+  <!-- 图片、标题名 -->
+  <view class="recommendation" wx:if='{{flag === 1}}'>
+    <view class="list" wx:for='{{albums}}' wx:key='{{index}}' data-item="{{item}}" bindtap='song_sheet'>
+      <view class="mv">
+        <image src="{{item.blurPicUrl}}" class='recommend_bg'>
+          <image src="../../images/bofang.png" class="play"></image>
+        </image>
+      </view>
+      <view class="name">{{item.name}}</view>
+    </view>
+  </view>
+  <view class="recommendation" wx:else>
+    <view class="list" wx:for='{{song_data}}' wx:key='{{index}}'>
+      <view class="mv">
+        <image src='{{item.album.blurPicUrl}}' class='recommend_bg'>
+          <image src="../../images/bofang.png" class="play"></image>
+        </image>
+      </view>
+      
+        <view class="name">{{item.name}}</view>
+        <view  class="names">{{item.artists[0].name}}</view>
+    
+    </view>
+  </view>
+</view>

@@ -1,0 +1,62 @@
+<!--pages/singer/singerDetails/singerDetails.wxml-->
+<!-- 歌手详情 -->
+<view class="singer_details">
+<!-- 图片 -->
+  <image src="{{singer_information.picUrl}}" class="portrait">
+  <!-- 歌手名 -->
+    <view class="name">{{singer_information.name}}</view>
+    <view class="play">
+    <!-- 随机播放全部按钮 -->
+      <van-icon name="play-circle-o" />
+      <view>随机播放全部</view>
+    </view>
+    <view class="personal">
+      <van-icon name="user-o" />
+      <view>个人主页</view>
+    </view>
+    <view class="Collection">
+      <van-icon name="plus" />
+      <view>收藏</view>
+    </view>
+  </image>
+  <view class="nav">
+    <view class="nav_bar">
+      <text>热门{{singer_songs.length}}</text>
+
+    </view>
+    <view class="nav_bar">
+      <text>专辑</text>
+      <text class="txt">{{singer_information.albumSize}}</text>
+    </view>
+    <view class="nav_bar">
+      <text>MV</text>
+      <text class="txt">{{singer_information.mvSize}}</text>
+    </view>
+    <view class="nav_bar">
+      <text>歌手信息</text>
+    </view>
+  </view>
+  <!-- 底部歌曲信息列表 -->
+  <view class="songs" wx:for="{{singer_songs}}" wx:key="{{index}}">
+  <!-- 序号 -->
+    <view class="serial">{{index + 1}}</view>
+    <view class="stop">
+      <view class="right">
+        <view class="rath">
+        <!-- 歌名 -->
+          <text>{{item.name}} </text>
+          <text class="raths" wx:if="{{item.alia[0]}}">({{item.alia[0]}})</text>
+        </view>
+        <view class="Album">
+          <image class="sq" src="../../../images/sq.png"></image>
+          <!-- 专辑名 -->
+          <text class="album">{{item.al.name}}</text>
+        </view>
+      </view>
+      <!-- 播放按钮 -->
+        <van-icon name="play-circle-o" class="plays"/>
+      
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,86 @@
+/* components/newDish/newDish.wxss */
+
+.recommend {
+  margin-top: 40rpx;
+}
+
+.recommend_songs {
+  display: flex;
+  position: relative;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.songs {
+  margin-left: 20rpx;
+}
+
+.dish {
+  color: #d0d0d0;
+  font-size: 24rpx;
+  margin-right: 20rpx;
+}
+
+.select {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #000;
+}
+
+.stillMore {
+  position: absolute;
+  width: 158rpx;
+  border-radius: 70rpx;
+  right: 30rpx;
+  background: #eee;
+  text-align: center;
+  font-size: 24rpx;
+}
+
+.recommendation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.list {
+  width: 32%;
+  margin-top: 50rpx;
+}
+
+.mv {
+  height: 140rpx;
+}
+
+.recommend_bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 14rpx;
+  position: relative;
+}
+
+.play {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  bottom: 10rpx;
+  left: 0;
+}
+
+.name {
+  font-size: 24rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 98%;
+  margin-top: 20rpx;
+}
+
+.names {
+  font-size: 24rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 98%;  
+}

@@ -1,0 +1,72 @@
+/* pages/play/play.wxss */
+ .virtual {
+        width: 100%;
+        height: 100%;
+        /*图片虚化*/
+        filter: blur(50px);
+        z-index: -1;
+        position: absolute;
+    }
+    .name {
+        position: relative;
+        color: white;
+        padding-top: 30rpx;
+        text-align: center;
+    }
+    .demo {
+        /*旋转img外的div*/
+        text-align: center;
+        margin-top: 100rpx;
+    }
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .cover{
+        /*旋转的图片*/
+        transform: rotate(360deg);
+        animation: rotation 25s linear infinite;
+        -moz-animation: rotation 25s linear infinite;
+        -webkit-animation: rotation 25s linear infinite;
+        -o-animation: rotation 25s linear infinite;
+        border-radius: 50%;
+        width: 450rpx;
+        height: 450rpx;
+
+    }
+    .cover1{
+        transform: rotate(360deg);
+        animation: rotation 25s linear infinite;
+        -moz-animation: rotation 25s linear infinite;
+        -webkit-animation: rotation 25s linear infinite;
+        -o-animation: rotation 25s linear infinite;
+        animation-play-state: paused;
+    }
+    .speed{
+        width: 80%;
+        margin: 100rpx auto;
+    }
+    .progress{
+        display: flex;
+    }
+    .section__title{
+        display: flex;
+    }
+    .body-view{
+        width: 90%;
+    }
+    .time{
+        color: white;
+        align-items: center;
+        line-height: 76rpx;
+    }    
+    .state{
+      position: relative;
+        width: 50rpx;
+        height: 50rpx;
+        margin-left: 82rpx;
+    }
